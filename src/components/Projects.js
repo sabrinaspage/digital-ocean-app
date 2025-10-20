@@ -8,7 +8,7 @@ function Projects() {
     {
       id: 1,
       label: "Featured Project",
-      title: "RobotaHQ",
+      title: "Robota",
       description: [
         "The Russian invasion of Ukraine has caused the greatest humanitarian crisis in Europe since the Second World War.",
         "Robota supports Ukrainians in finding their next opportunity on their career journey and connects prospective employers with Ukrainian talent."
@@ -19,7 +19,7 @@ function Projects() {
       ],
       githubLink: "https://github.com",
       externalLink: "https://example.com",
-      image: "/robotahq.png",
+      image: "/robota.png",
       reverse: false
     },
     {
