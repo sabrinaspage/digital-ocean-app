@@ -1,10 +1,12 @@
 import React from "react";
 import "../styles/Projects.css";
 
-function FeaturedProject({ label, title, description, tech, githubLink, externalLink, showLearnMore, reverse }) {
+function FeaturedProject({ label, title, description, tech, githubLink, externalLink, showLearnMore, reverse, image }) {
   return (
     <div className={`featured-project ${reverse ? 'featured-project-reverse' : ''}`}>
-      <div className={`project-image ${reverse ? 'project-image-right' : 'project-image-left'}`}></div>
+      <div className={`project-image ${reverse ? 'project-image-right' : 'project-image-left'}`}>
+        {image && <img src={image} alt={title} />}
+      </div>
       <div className={`project-content ${reverse ? 'project-content-left' : 'project-content-right'}`}>
         <p className="project-label">{label}</p>
         <h3 className="project-title">{title}</h3>

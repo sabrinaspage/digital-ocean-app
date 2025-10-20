@@ -9,7 +9,7 @@ function Hero() {
       <h2 className="hero-subtitle">I build things for the web.</h2>
       <p className="hero-description">
         I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
-        Currently, I'm focused on building accessible, human-centered products at <span className="highlight">Upstatement</span>.
+        Currently, I'm focused on building accessible, human-centered products at <span className="highlight">Vouch</span>.
       </p>
       <a href="#contact" className="btn-outline btn-large">Check out my Resume!</a>
     </section>

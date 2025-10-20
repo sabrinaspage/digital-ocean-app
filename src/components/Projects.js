@@ -19,6 +19,7 @@ function Projects() {
       ],
       githubLink: "https://github.com",
       externalLink: "https://example.com",
+      image: "/robotahq.png",
       reverse: false
     },
     {
@@ -34,6 +35,7 @@ function Projects() {
       ],
       githubLink: "https://github.com",
       externalLink: "https://example.com",
+      image: "/futurview.png",
       reverse: true
     },
     {
@@ -48,6 +50,7 @@ function Projects() {
         ["ReactJS", "MaterialUI", "Netlify", "CockroachDB"]
       ],
       showLearnMore: true,
+      image: "/skript.png",
       reverse: false
     }
   ];

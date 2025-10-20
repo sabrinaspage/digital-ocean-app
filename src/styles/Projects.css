@@ -18,6 +18,13 @@
   overflow: hidden;
 }
 
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .project-image::after {
   content: '';
   position: absolute;
@@ -25,6 +32,11 @@
   background: rgba(0, 178, 255, 0.7);
   mix-blend-mode: overlay;
   opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.featured-project:hover .project-image::after {
+  opacity: 0.2;
 }
 
 .project-content {
