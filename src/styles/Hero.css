@@ -1,0 +1,76 @@
+/* Hero Section Styles */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 48px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-intro {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--text-light);
+  letter-spacing: 1px;
+  line-height: 100px;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--text-gray);
+  letter-spacing: 1px;
+  line-height: 100px;
+  margin: 0 0 32px 0;
+}
+
+.hero-description {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-gray);
+  letter-spacing: 0.25px;
+  line-height: 1.5;
+  max-width: 672px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: 1024px) {
+  .hero-title,
+  .hero-subtitle {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 24px;
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+}
+
