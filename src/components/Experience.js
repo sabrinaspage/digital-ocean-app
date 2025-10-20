@@ -4,8 +4,9 @@ import "../styles/Experience.css";
 function Experience() {
   const [activeTab, setActiveTab] = useState(0);
 
-  const experiences = [
+  const allExperiences = [
     {
+      category: "Jobs",
       company: "Vouch Insurance",
       companyLink: "https://www.vouch.us/",
       roles: [
@@ -23,6 +24,7 @@ function Experience() {
       location: "Remote"
     },
     {
+      category: "Jobs",
       company: "Columbia University IT",
       companyLink: "https://www.cuit.columbia.edu/",
       roles: [
@@ -39,6 +41,7 @@ function Experience() {
       location: "Remote"
     },
     {
+      category: "Jobs",
       company: "Beyond",
       companyLink: "https://checkout.ridebeyond.com/",
       roles: [
@@ -53,10 +56,61 @@ function Experience() {
       ],
       techStack: "React, TypeScript, Tailwind CSS, NextJS, PostgreSQL, TypeORM, Liquid",
       location: "New York, NY"
+    },
+    {
+      category: "Extras",
+      company: "The Ethical Tech Project",
+      companyLink: "https://www.ethicaltechproject.org/",
+      roles: [
+        {
+          title: "Fellow",
+          date: "April 2025 – June 2025",
+          responsibilities: [
+            "Engaged with early career professionals on ethical AI principles through readings and discussions"
+          ]
+        }
+      ],
+      location: "Hybrid"
+    },
+    {
+      category: "Extras",
+      company: "CodeDay",
+      companyLink: "https://www.codeday.org/",
+      roles: [
+        {
+          title: "Mentor",
+          date: "July 2023 – August 2023",
+          responsibilities: [
+            "Guided two college students learning React, NodeJS, TypeScript and various Cloud APIs through the process of contributing to the Firefiles open-source application. Supported for seven weeks."
+          ]
+        }
+      ],
+      location: "New York, NY"
+    },
+    {
+      category: "Extras",
+      company: "Out In Tech",
+      companyLink: "https://outintech.com/",
+      roles: [
+        {
+          title: "Mentee",
+          date: "April 2023 – June 2023",
+          responsibilities: [
+            "Designed the user problem for landlords and tenants who live in affordable, accessible housing",
+            "Constructed the user design, data model and code architecture for a production-ready REST microservice"
+          ]
+        }
+      ],
+      techStack: "TypeScript, NextJS, PostgreSQL, DBeaver, PgAdmin 4",
+      location: "Remote"
     }
   ];
 
-  const currentExperience = experiences[activeTab];
+  const currentExperience = allExperiences[activeTab];
+
+  // Group experiences by category for rendering tabs with headers
+  const jobsStartIndex = 0;
+  const extrasStartIndex = allExperiences.findIndex(exp => exp.category === "Extras");
 
   return (
     <section id="experience" className="section">
@@ -66,18 +120,32 @@ function Experience() {
         </h2>
         <div className="section-line"></div>
       </div>
+
       <div className="experience-container">
         <div className="experience-tabs">
-          {experiences.map((exp, index) => (
+          <div className="tab-section-label">Jobs</div>
+          {allExperiences.filter(exp => exp.category === "Jobs").map((exp, index) => (
             <button
-              key={index}
+              key={`job-${index}`}
               className={`tab-button ${activeTab === index ? 'active' : ''}`}
               onClick={() => setActiveTab(index)}
             >
               {exp.company}
             </button>
           ))}
+          
+          <div className="tab-section-label">Extras</div>
+          {allExperiences.filter(exp => exp.category === "Extras").map((exp, index) => (
+            <button
+              key={`extra-${index}`}
+              className={`tab-button ${activeTab === (extrasStartIndex + index) ? 'active' : ''}`}
+              onClick={() => setActiveTab(extrasStartIndex + index)}
+            >
+              {exp.company}
+            </button>
+          ))}
         </div>
+
         <div className="experience-content">
           {currentExperience.roles.map((role, index) => (
             <div key={index} className="role-section">
