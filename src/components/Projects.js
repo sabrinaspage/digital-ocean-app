@@ -1,6 +1,5 @@
 import React from "react";
 import FeaturedProject from "./FeaturedProject";
-import ProjectCard from "./ProjectCard";
 import "../styles/Projects.css";
 
 function Projects() {
@@ -50,54 +49,6 @@ function Projects() {
       externalLink: "https://devpost.com/software/skript",
       image: "/skript.png",
       reverse: false
-    }
-  ];
-
-  const otherProjects = [
-    {
-      id: 1,
-      title: "Integrating Algolia Search with WordPress Multisite",
-      description: "Building a custom multisite compatible WordPress plugin to build global search with Algolia.",
-      tech: ["Algolia", "WordPress", "PHP"],
-      externalLink: "#"
-    },
-    {
-      id: 2,
-      title: "Time to Have More Fun",
-      description: "A single page web app for helping me choose where to travel, built with Next.js, Firebase, and Tailwind CSS.",
-      tech: ["Next.js", "Tailwind CSS", "Firebase"],
-      githubLink: "#",
-      externalLink: "#"
-    },
-    {
-      id: 3,
-      title: "Building a Headless Mobile App CSS From Scratch",
-      description: "Find out how we built a custom headless CMS with Node, Express, and Firebase for a project at Upstatement.",
-      tech: ["Node", "Express", "Firebase", "Vue"],
-      externalLink: "#"
-    },
-    {
-      id: 4,
-      title: "OctoProfile",
-      description: "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-      tech: ["Next.js", "Chart.js", "GitHub API"],
-      githubLink: "#",
-      externalLink: "#"
-    },
-    {
-      id: 5,
-      title: "Google Keep Clone",
-      description: "A simple Google Keep clone built with Vue and Firebase.",
-      tech: ["Vue", "Firebase"],
-      githubLink: "#",
-      externalLink: "#"
-    },
-    {
-      id: 6,
-      title: "Apple Music Embeddable Web Player Widget",
-      description: "Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging MusicKit.js. Read more about this project on 9to5Mac.",
-      tech: ["MusicKit.js", "JS", "SCSS"],
-      externalLink: "#"
     }
   ];
 
