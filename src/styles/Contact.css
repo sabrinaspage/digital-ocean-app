@@ -37,10 +37,36 @@
   margin-bottom: 32px;
 }
 
+.contact-social {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.contact-social a {
+  color: var(--text-gray);
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.contact-social svg {
+  width: 28px;
+  height: 28px;
+}
+
 @media (max-width: 768px) {
   .contact-title {
     font-size: 40px;
     line-height: 60px;
+  }
+
+  .contact-social svg {
+    width: 24px;
+    height: 24px;
   }
 }
 
