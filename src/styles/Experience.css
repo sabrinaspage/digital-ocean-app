@@ -1,14 +1,4 @@
 /* Experience Section Styles */
-.experience-intro {
-  font-family: var(--font-heading);
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--text-gray);
-  letter-spacing: 0.25px;
-  line-height: 1.5;
-  max-width: 802px;
-  margin-bottom: 48px;
-}
 
 .experience-container {
   display: flex;
@@ -99,6 +89,29 @@
   left: 0;
   color: var(--accent);
   font-size: 10px;
+}
+
+.role-section {
+  margin-bottom: 32px;
+}
+
+.role-section:last-child {
+  margin-bottom: 0;
+}
+
+.role-divider {
+  height: 1px;
+  background-color: rgba(141, 233, 255, 0.1);
+  margin: 32px 0;
+}
+
+.company-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.company-link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

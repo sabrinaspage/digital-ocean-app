@@ -1,7 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Experience.css";
 
 function Experience() {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const experiences = [
+    {
+      company: "Vouch Insurance",
+      companyLink: "https://www.vouch.us/",
+      roles: [
+        {
+          title: "Software Engineer",
+          date: "June 2021 – Present",
+          responsibilities: [
+            "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, increasing revenue by 15% per month",
+            "Migrated underwriting and authority rules into a business rule engine, reducing underwriter turnaround times by 20%",
+            "Rebuilt Customer Portal in React, serving 1.5k unique users monthly with improved developer workflows and modern best practices"
+          ]
+        }
+      ],
+      techStack: "Ruby on Rails, TypeScript, React, MaterialUI, Jest, RSpec, GraphQL, NestJS, Prisma, Temporal, CircleCI, Docker, AWS",
+      location: "Remote"
+    },
+    {
+      company: "Columbia University IT",
+      companyLink: "https://www.cuit.columbia.edu/",
+      roles: [
+        {
+          title: "Systems Development Intern",
+          date: "February 2021 – June 2021",
+          responsibilities: [
+            "Streamlined system transition by migrating Confluence content into HTML-structured Jira Epics through Python API automation",
+            "Contributed to Redivis open-source software to enable transfer of CSV files"
+          ]
+        }
+      ],
+      techStack: "Python, SQL, DBVisualizer, MagickMock",
+      location: "Remote"
+    },
+    {
+      company: "Beyond",
+      companyLink: "https://checkout.ridebeyond.com/",
+      roles: [
+        {
+          title: "Full Stack Developer",
+          date: "June 2020 – January 2021",
+          responsibilities: [
+            "Engineered user interfaces for a business-facing dashboard using Tailwind, React, TypeScript, NextJS",
+            "Optimized customer retention by redirecting customers from a Shopify subscription page to Beyond's checkout page using JavaScript"
+          ]
+        }
+      ],
+      techStack: "React, TypeScript, Tailwind CSS, NextJS, PostgreSQL, TypeORM, Liquid",
+      location: "New York, NY"
+    }
+  ];
+
+  const currentExperience = experiences[activeTab];
+
   return (
     <section id="experience" className="section">
       <div className="section-header">
@@ -10,26 +66,41 @@ function Experience() {
         </h2>
         <div className="section-line"></div>
       </div>
-      <p className="experience-intro">
-        As of August 2022, I am still early in my career, but I think internships are still a valid means of work. Thus, here you will find my technical work experiences: <span className="highlight">https://www.linkedin.com/in/sab-reyes/details/experience/</span>
-      </p>
       <div className="experience-container">
         <div className="experience-tabs">
-          <button className="tab-button active">Vouch Insurance</button>
-          <button className="tab-button">Colombia<br/>University IT</button>
-          <button className="tab-button">Beyond<br/>(formerly<br/>Brooklyness)</button>
+          {experiences.map((exp, index) => (
+            <button
+              key={index}
+              className={`tab-button ${activeTab === index ? 'active' : ''}`}
+              onClick={() => setActiveTab(index)}
+            >
+              {exp.company}
+            </button>
+          ))}
         </div>
         <div className="experience-content">
-          <h3 className="job-title">
-            Software Engineer I <span className="at-symbol">@</span> <span className="highlight">Vouch Insurance</span>
-          </h3>
-          <p className="job-date">June 2021 - Present</p>
-          <ul className="job-responsibilities">
-            <li>Designing, building, and maintaining full-stack, customer-facing features to power our insurance application and partnership integrations.</li>
-            <li>Working on the core front-end infrastructure for our customer experience.</li>
-            <li>Collaborating with team members on priorities and technical specifications and assisting in the onboarding of new engineers.</li>
-            <li>Participating in brainstorming, retrospectives, sprint planning, and team game times!</li>
-          </ul>
+          {currentExperience.roles.map((role, index) => (
+            <div key={index} className="role-section">
+              <h3 className="job-title">
+                {role.title} <span className="at-symbol">@</span>{" "}
+                <a 
+                  href={currentExperience.companyLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="highlight company-link"
+                >
+                  {currentExperience.company}
+                </a>
+              </h3>
+              <p className="job-date">{role.date}</p>
+              <ul className="job-responsibilities">
+                {role.responsibilities.map((resp, respIndex) => (
+                  <li key={respIndex}>{resp}</li>
+                ))}
+              </ul>
+              {index < currentExperience.roles.length - 1 && <div className="role-divider"></div>}
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -37,4 +108,3 @@ function Experience() {
 }
 
 export default Experience;
-
