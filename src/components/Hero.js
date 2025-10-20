@@ -11,7 +11,7 @@ function Hero() {
         I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. 
         Currently, I'm focused on building accessible, human-centered products at <span className="highlight">Vouch</span>.
       </p>
-      <a href="#contact" className="btn-outline btn-large">Check out my Resume!</a>
+      <a href="/resume.pdf" className="btn-outline btn-large" target="_blank" rel="noopener noreferrer">Check out my Resume!</a>
     </section>
   );
 }
