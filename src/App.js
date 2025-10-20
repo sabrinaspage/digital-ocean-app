@@ -18,6 +18,12 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
+      <div className="decorative-flowers-left">
+        <img src="/send-hydrangeas-globalrose.png" alt="" />
+      </div>
+      <div className="decorative-flowers-right">
+        <img src="/send-hydrangeas-globalrose.png" alt="" />
+      </div>
     </div>
   );
 }

@@ -116,6 +116,39 @@ html {
   color: var(--bg-dark);
 }
 
+/* Decorative Flowers */
+.decorative-flowers-left {
+  position: fixed;
+  bottom: -150px;
+  right: -180px;
+  width: 350px;
+  height: 350px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.decorative-flowers-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.decorative-flowers-right {
+  position: fixed;
+  bottom: -150px;
+  left: -180px;
+  width: 350px;
+  height: 350px;
+  z-index: 5;
+  opacity: 0.8;
+}
+
+.decorative-flowers-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .section {
@@ -137,6 +170,18 @@ html {
 
   .section-line {
     display: none;
+  }
+
+  .decorative-flowers-left {
+    width: 200px;
+    height: 200px;
+    bottom: -120px;
+    left: -120px;
+  }
+
+  .decorative-flowers-left:hover {
+    bottom: -30px;
+    left: -30px;
   }
 }
 
