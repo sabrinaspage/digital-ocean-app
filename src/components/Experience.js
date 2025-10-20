@@ -14,13 +14,13 @@ function Experience() {
           title: "Software Engineer",
           date: "June 2021 – Present",
           responsibilities: [
-            "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, increasing revenue by 15% per month",
+            "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, reducing sales team preparation time from 1 hour to under 1 minute",
             "Migrated underwriting and authority rules into a business rule engine, reducing underwriter turnaround times by 20%",
             "Rebuilt Customer Portal in React, serving 1.5k unique users monthly with improved developer workflows and modern best practices"
           ]
         }
       ],
-      techStack: "Ruby on Rails, TypeScript, React, MaterialUI, Jest, RSpec, GraphQL, NestJS, Prisma, Temporal, CircleCI, Docker, AWS",
+      techStack: "Ruby on Rails, TypeScript, React, MaterialUI, Jest, RSpec, GraphQL, NestJS, Prisma, Temporal, CircleCI, Postman, Bruno, Nomad, Cursor, Warp, Docker, Datadog, Sidekiq, LogRocket, AWS",
       location: "Remote"
     },
     {
@@ -49,7 +49,7 @@ function Experience() {
           title: "Full Stack Developer",
           date: "June 2020 – January 2021",
           responsibilities: [
-            "Engineered user interfaces for a business-facing dashboard using Tailwind, React, TypeScript, NextJS",
+            "Engineered user interfaces for an internal dashboard using Tailwind, React, TypeScript, NextJS",
             "Optimized customer retention by redirecting customers from a Shopify subscription page to Beyond's checkout page using JavaScript"
           ]
         }
@@ -109,7 +109,6 @@ function Experience() {
   const currentExperience = allExperiences[activeTab];
 
   // Group experiences by category for rendering tabs with headers
-  const jobsStartIndex = 0;
   const extrasStartIndex = allExperiences.findIndex(exp => exp.category === "Extras");
 
   return (
@@ -166,6 +165,16 @@ function Experience() {
                   <li key={respIndex}>{resp}</li>
                 ))}
               </ul>
+              {currentExperience.techStack && (
+                <div className="tech-stack-section">
+                  <p className="tech-stack-label">Technologies used:</p>
+                  <div className="tech-stack-list">
+                    {currentExperience.techStack.split(', ').map((tech, techIndex) => (
+                      <span key={techIndex} className="tech-stack-item">▸ {tech}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
               {index < currentExperience.roles.length - 1 && <div className="role-divider"></div>}
             </div>
           ))}

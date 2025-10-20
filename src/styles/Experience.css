@@ -129,6 +129,33 @@
   text-decoration: underline;
 }
 
+.tech-stack-section {
+  margin-top: 24px;
+}
+
+.tech-stack-label {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 0.25px;
+  margin-bottom: 12px;
+}
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.tech-stack-item {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-gray);
+  letter-spacing: 0.5px;
+}
+
 @media (max-width: 768px) {
   .experience-container {
     flex-direction: column;
