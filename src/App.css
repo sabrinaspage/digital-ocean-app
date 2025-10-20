@@ -29,6 +29,15 @@
   color: var(--accent);
 }
 
+a.highlight {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.highlight:hover {
+  text-decoration: underline;
+}
+
 /* Button Styles */
 .btn-outline {
   padding: 10px 16px;
