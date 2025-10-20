@@ -20,23 +20,7 @@ function About() {
           </p>
           <p>
             I was first introduced to coding not in college, but in middle school when I was on <span className="highlight">Neopets</span>. You would have an account and own up to four Neopets. You could build an HTML page on each Neopet's pet page and add all sorts of fun stuff with CSS. Neopets is what introduced me to PhotoShop too, which explains why I love graphic design platforms like Canva so much!
-          </p>
-          <p>Here are a few technologies I've been working with recently:</p>
-          <div className="tech-list">
-            <div className="tech-column">
-              <div className="tech-item">▸ Firebase</div>
-              <div className="tech-item">▸ React</div>
-              <div className="tech-item">▸ Node.js</div>
-            </div>
-            <div className="tech-column">
-              <div className="tech-item">▸ TypeScript</div>
-              <div className="tech-item">▸ Material UI</div>
-              <div className="tech-item">▸ Netlify</div>
-            </div>
-            <div className="tech-column">
-              <div className="tech-item">▸ Figma</div>
-            </div>
-          </div>
+          </p>    
         </div>
         <div className="about-image">
           <div className="image-wrapper">
