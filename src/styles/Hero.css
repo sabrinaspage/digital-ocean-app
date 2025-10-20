@@ -33,10 +33,55 @@
   font-family: var(--font-heading);
   font-size: 80px;
   font-weight: 700;
-  color: var(--text-gray);
   letter-spacing: 1px;
   line-height: 100px;
   margin: 0 0 32px 0;
+  position: relative;
+  display: inline-block;
+  color: var(--text-gray);
+  isolation: isolate;
+}
+
+.hero-subtitle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #8DE9FF;
+  z-index: -1;
+  animation: sweepHighlight 1.5s ease-in-out 0.8s forwards;
+}
+
+.hero-subtitle::after {
+  content: 'I build things for the web.';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #001333;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: sweepTextReveal 1.5s ease-in-out 0.8s forwards;
+}
+
+@keyframes sweepHighlight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes sweepTextReveal {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .hero-description {
