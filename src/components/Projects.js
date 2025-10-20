@@ -17,8 +17,7 @@ function Projects() {
         ["Django", "Python", "GCP", "TypeScript", "React"],
         ["Figma", "Netlify", "Bootstrap", "Git"]
       ],
-      githubLink: "https://github.com",
-      externalLink: "https://example.com",
+      externalLink: "https://devpost.com/software/robota-bs2pay",
       image: "/robota.png",
       reverse: false
     },
@@ -33,8 +32,7 @@ function Projects() {
       tech: [
         ["ReactJS", "ChakraUI", "AssemblyAI", "Firebase", "Netlify"]
       ],
-      githubLink: "https://github.com",
-      externalLink: "https://example.com",
+      externalLink: "https://devpost.com/software/futerview-lxowmr",
       image: "/futurview.png",
       reverse: true
     },
@@ -49,7 +47,7 @@ function Projects() {
       tech: [
         ["ReactJS", "MaterialUI", "Netlify", "CockroachDB"]
       ],
-      showLearnMore: true,
+      externalLink: "https://devpost.com/software/skript",
       image: "/skript.png",
       reverse: false
     }
