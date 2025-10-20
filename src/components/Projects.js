@@ -24,7 +24,7 @@ function Projects() {
     {
       id: 2,
       label: "Featured Project",
-      title: "Futurview",
+      title: "Futerview",
       description: [
         "Empowering marginalized communities through accessible interview preparation. Sometimes, we need someone to practice interviewing with; however, we might not have a person available at all times.",
         "With Futerview, we are capable of interviewing with an AI that makes practice possible!"
