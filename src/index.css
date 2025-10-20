@@ -1,13 +1,91 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Custom Font Faces - You can add local font files here if needed */
+@font-face {
+  font-family: 'Calibre';
+  src: local('Calibre'), local('Arial'), local('Helvetica');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: local('Calibre Bold'), local('Arial Bold'), local('Helvetica Bold');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: local('SF Mono'), local('Monaco'), local('Consolas'), local('Courier New');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: local('SF Mono Bold'), local('Monaco'), local('Consolas'), local('Courier New');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #001333;
+  color: #A0A3BD;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', 'Courier New', monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #001333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8DE9FF;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6dc5dd;
+}
+
+/* Selection */
+::selection {
+  background-color: #8DE9FF;
+  color: #001333;
+}
+
+::-moz-selection {
+  background-color: #8DE9FF;
+  color: #001333;
 }
