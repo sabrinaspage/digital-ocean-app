@@ -113,19 +113,6 @@ function Projects() {
       {featuredProjects.map(project => (
         <FeaturedProject key={project.id} {...project} />
       ))}
-
-      <div className="other-projects">
-        <h3 className="other-projects-title">Other Noteworthy Projects</h3>
-        <a href="#" className="view-archive">view the archive</a>
-        
-        <div className="projects-grid">
-          {otherProjects.map(project => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
-        </div>
-
-        <button className="btn-outline btn-large show-more">Show More</button>
-      </div>
     </section>
   );
 }

@@ -54,6 +54,10 @@
   text-align: left;
 }
 
+.featured-project:last-child {
+  margin-bottom: 0;
+}
+
 .project-label {
   font-family: var(--font-mono);
   font-size: 14px;
