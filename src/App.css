@@ -172,16 +172,9 @@ html {
     display: none;
   }
 
-  .decorative-flowers-left {
-    width: 200px;
-    height: 200px;
-    bottom: -120px;
-    left: -120px;
-  }
-
-  .decorative-flowers-left:hover {
-    bottom: -30px;
-    left: -30px;
+  .decorative-flowers-left,
+  .decorative-flowers-right {
+    display: none;
   }
 }
 
