@@ -12,11 +12,11 @@ function Experience() {
       roles: [
         {
           title: "Software Engineer",
-          date: "June 2021 – Present",
+          date: "June 2021 - Present",
           responsibilities: [
             "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, reducing sales team preparation time from 1 hour to under 1 minute",
             "Migrated underwriting and authority rules into a business rule engine, reducing underwriter turnaround times by 20%",
-            "Rebuilt Customer Portal in React, serving 1.5k unique users monthly with improved developer workflows and modern best practices"
+            "Rebuilt Client Portal from VueJS in ReactJS, to this day serving 1.5k unique users monthly with improved developer workflows and modern best practices"
           ]
         }
       ],
@@ -30,7 +30,7 @@ function Experience() {
       roles: [
         {
           title: "Systems Development Intern",
-          date: "February 2021 – June 2021",
+          date: "February 2021 - June 2021",
           responsibilities: [
             "Streamlined system transition by migrating Confluence content into HTML-structured Jira Epics through Python API automation",
             "Contributed to Redivis open-source software to enable transfer of CSV files"
@@ -81,7 +81,7 @@ function Experience() {
           title: "Mentor",
           date: "July 2023 – August 2023",
           responsibilities: [
-            "Guided two college students learning React, NodeJS, TypeScript and various Cloud APIs through the process of contributing to the Firefiles open-source application. Supported for seven weeks."
+            <>Guided two college students learning React, NodeJS, TypeScript and various Cloud APIs through the process of contributing to the <a href="https://github.com/faisalsayed10/firefiles" target="_blank" rel="noopener noreferrer" className="highlight">Firefiles</a> open-source application. Supported for seven weeks.</>
           ]
         }
       ],
@@ -96,8 +96,8 @@ function Experience() {
           title: "Mentee",
           date: "April 2023 – June 2023",
           responsibilities: [
-            "Designed the user problem for landlords and tenants who live in affordable, accessible housing",
-            "Constructed the user design, data model and code architecture for a production-ready REST microservice"
+            "Designed and built a REST microservice that streamlines landlord-tenant communication by tracking maintenance requests and tenant needs in apartment housing",
+            "Received system design and collaboration mentorship under the guidance of Elisa Valdez de Ramírez"
           ]
         }
       ],
