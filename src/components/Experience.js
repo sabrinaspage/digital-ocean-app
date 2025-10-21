@@ -14,7 +14,7 @@ function Experience() {
           title: "Software Engineer",
           date: "June 2021 - Present",
           responsibilities: [
-            "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, reducing sales team preparation time from 1 hour to under 1 minute",
+            "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, reducing sales team preparation time from 1 hour to under 1 minute per quote",
             "Migrated underwriting and authority rules into a business rule engine, reducing underwriter turnaround times by 20%",
             "Rebuilt Client Portal from VueJS in ReactJS, to this day serving 1.5k unique users monthly with improved developer workflows and modern best practices"
           ]
