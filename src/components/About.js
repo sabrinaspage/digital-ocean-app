@@ -13,14 +13,17 @@ function About() {
       <div className="about-content">
         <div className="about-text">
           <p>
-            Hi stranger! My name is Sabrina. I have been coding for several years now, starting in college and now at my job at <span className="highlight">Vouch Insurance</span>.
+            Hi stranger! My name is Sabrina. I've been coding for several years now — starting back in college and continuing into my current role at <span className="highlight">Vouch Insurance</span>.
           </p>
           <p>
-            Before entering Computer Science, I loved the research and exploration aspects of technology, but I actually didn't connect the dots between science and computer science. I didn't know there would be programming! The irony now is, I code all the time now! You know why? Because I absolutely adore this field.
+            Before studying Computer Science, I was fascinated by the research and exploration side of technology. But I'll admit, I didn't quite connect the dots between science and computer science at first — I had no idea programming would be such a big part of it! Now, coding has become my one true love.
           </p>
           <p>
-            I was first introduced to coding not in college, but in middle school when I was on <a href="https://www.neopets.com/" target="_blank" rel="noopener noreferrer" className="highlight">Neopets</a>. You would have an account and own up to four Neopets. You could build an HTML page on each Neopet's pet page and add all sorts of fun stuff with CSS. Neopets is what introduced me to PhotoShop too, which explains why I love graphic design platforms like Canva so much!
-          </p>    
+            My first introduction to coding actually came way before college: in middle school, on <a href="https://www.neopets.com/" target="_blank" rel="noopener noreferrer" className="highlight">Neopets</a>. Each Neopet had its own customizable HTML "pet page", and I spent hours adding fun designs and styling them with CSS. That's also how I discovered Photoshop, which probably explains why I still enjoy using design tools like Canva today.
+          </p>
+          <p>
+            Neopets may have started as a simple online game, but it's what sparked my passion for creating, designing, and ultimately — software engineering.
+          </p>
         </div>
         <div className="about-image">
           <div className="image-wrapper">
