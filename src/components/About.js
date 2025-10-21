@@ -13,7 +13,7 @@ function About() {
       <div className="about-content">
         <div className="about-text">
           <p>
-            Hi stranger! My name is Sabrina. I've been coding for several years now, starting back in college and continuing into my current role at <span href="https://www.vouch.us/" target="_blank" rel="noopener noreferrer" className="highlight">Vouch Insurance</span>.
+            Hi stranger! My name is Sabrina. I've been coding for several years now, starting back in college and continuing into my current role at <a href="https://www.vouch.us/" target="_blank" rel="noopener noreferrer" className="highlight">Vouch Insurance</a>.
           </p>
           <p>
             Before studying Computer Science, I was fascinated by the research and exploration side of technology. I'll admit, I didn't quite connect the dots between science and computer science at first — I had no idea programming would play such a big role! Now, coding is one of my favorite activities.

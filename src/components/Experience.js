@@ -145,7 +145,7 @@ function Experience() {
           ))}
         </div>
 
-        <div className="experience-content">
+        <div key={activeTab} className="experience-content">
           {currentExperience.roles.map((role, index) => (
             <div key={index} className="role-section">
               <h3 className="job-title">
