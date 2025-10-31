@@ -50,6 +50,7 @@ function Experience() {
           date: "June 2020 – January 2021",
           responsibilities: [
             "Engineered user interfaces for an internal dashboard using Tailwind, React, TypeScript, NextJS",
+            "Designed and developed a customer request form in TypeScript and React using formik with an Airtable backend to collect and manage scooter purchase, repair, and upgrade requests.",
             "Optimized customer retention by redirecting customers from a Shopify subscription page to Beyond's checkout page using JavaScript"
           ]
         }
