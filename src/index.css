@@ -1,7 +1,5 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* Custom Font Faces - You can add local font files here if needed */
 @font-face {
   font-family: 'Calibre';
   src: local('Calibre'), local('Arial'), local('Helvetica');
@@ -56,12 +54,10 @@ code {
   min-height: 100vh;
 }
 
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -79,7 +75,6 @@ html {
   background: #6dc5dd;
 }
 
-/* Selection */
 ::selection {
   background-color: #8DE9FF;
   color: #001333;

@@ -1,4 +1,3 @@
-/* Color Variables */
 :root {
   --bg-dark: #001333;
   --bg-card: #001a47;
@@ -10,7 +9,6 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +22,6 @@
   overflow-x: hidden;
 }
 
-/* Shared Utility Classes */
 .highlight {
   color: var(--accent);
 }
@@ -38,7 +35,6 @@ a.highlight:hover {
   text-decoration: underline;
 }
 
-/* Button Styles */
 .btn-outline {
   padding: 10px 16px;
   border: 2px solid var(--accent);
@@ -63,7 +59,6 @@ a.highlight:hover {
   font-size: 16px;
 }
 
-/* Section Styles */
 .section {
   padding: 80px 148px;
   max-width: 1440px;
@@ -105,18 +100,15 @@ a.highlight:hover {
   max-width: 264px;
 }
 
-/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection Color */
 ::selection {
   background-color: var(--accent);
   color: var(--bg-dark);
 }
 
-/* Decorative Flowers */
 .decorative-flowers-left {
   position: fixed;
   bottom: -150px;
@@ -149,7 +141,6 @@ html {
   object-fit: contain;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .section {
     padding: 80px 24px;

@@ -1,4 +1,3 @@
-/* Header Styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -83,7 +82,7 @@
   }
 
   .navbar {
-    display: none; /* Add mobile menu toggle */
+    display: none;
   }
 }
 
