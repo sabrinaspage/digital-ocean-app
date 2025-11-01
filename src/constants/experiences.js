@@ -117,7 +117,7 @@ export const allExperiences = [
   },
   {
     category: "Extras",
-    company: "CreAItivity AI Ethics Fellow",
+    company: "CreAItivity",
     companyLink:
       "https://media.licdn.com/dms/image/v2/C4D2DAQGYh0XQDKoqtQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1620081654771?e=1762574400&v=beta&t=Rsq-qMKyaLtEzqObyiLdMtdrsxlEA7MHlYzvdIK5U8A",
     roles: [
