@@ -8,16 +8,17 @@ export const allExperiences = [
     roles: [
       {
         title: "Software Engineer",
-        date: "June 2021 - Present",
+        date: "June 2021 - Present (listing some amongst many projects)",
         responsibilities: [
-          "Designed and led event-driven automation of broker sales assets using Typescript, Temporal, and AWS S3, reducing sales team preparation time from 1 hour to under 1 minute per quote",
-          "Migrated underwriting and authority rules into a business rule engine, reducing underwriter turnaround times by 20%",
-          "Rebuilt Client Portal from VueJS in ReactJS, to this day serving 1.5k unique users monthly with improved developer workflows and modern best practices",
+          "Designed and led the development of an event-driven document generation system using TypeScript, Temporal, and AWS S3. What used to take the sales team an hour per quote now takes under a minute, helping them focus on delivering key quote information to brokers instead of building PowerPoint decks",
+          "Migrated underwriting rules, authority rules and form attachment logic into a business rule engine, reducing underwriter turnaround times by 20%. This shift allows the team to focus on complex, high-value cases",
+          "Launched a self-service forms service built with NestJS, Prisma, and OpenAPI, enabling the Insurance Innovation team to manage and deploy form templates without relying on engineering",
+          "Modernized Vouch's customer experience, rebuilding the Customer Portal in React (from Vue), where GraphQL served as the query language for our backend and MaterialUI as our component library",
         ],
       },
     ],
     techStack:
-      "Ruby on Rails, TypeScript, React, MaterialUI, Jest, RSpec, GraphQL, NestJS, Prisma, Temporal, CircleCI, Postman, Bruno, Nomad, Cursor, Warp, Docker, Datadog, Sidekiq, LogRocket, AWS",
+      "TypeScript, React, MaterialUI, NestJS, Prisma, Ruby on Rails, Cursor, Warp, Temporal, AWS, CircleCI, Postman, Bruno, Nomad, Docker, Datadog, LogRocket, GraphQL",
     location: "Remote",
   },
   {
@@ -47,7 +48,7 @@ export const allExperiences = [
         date: "June 2020 – January 2021",
         responsibilities: [
           "Engineered user interfaces for an internal dashboard using Tailwind, React, TypeScript, NextJS",
-          "Designed and developed a customer request form in TypeScript and React using formik with an Airtable backend to collect and manage scooter purchase, repair, and upgrade requests.",
+          "Designed and developed a customer request form in TypeScript and React collect and manage scooter purchase, repair, and upgrade requests. Leveraged an airtable backend and the Formik library",
           "Optimized customer retention by redirecting customers from a Shopify subscription page to Beyond's checkout page using JavaScript",
         ],
       },
