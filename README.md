@@ -1,1 +1,1 @@
-This is my portfolio's source code, hosted on https://sabrinaspage.com/! Crafted purely with HTML, CSS and JavaScript. Enjoy your time here!
+This is my portfolio's source code, hosted on https://sabrinaspage.com/! Crafted purely with HTML, CSS, JavaScript and React. Run `npm install` `npm build` and `npm start` to get started. Enjoy your time here!
