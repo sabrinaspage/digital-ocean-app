@@ -115,4 +115,22 @@ export const allExperiences = [
     techStack: "TypeScript, NextJS, PostgreSQL, DBeaver, PgAdmin 4",
     location: "Remote",
   },
+  {
+    category: "Extras",
+    company: "CreAItivity AI Ethics Fellow",
+    companyLink:
+      "https://media.licdn.com/dms/image/v2/C4D2DAQGYh0XQDKoqtQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1620081654771?e=1762574400&v=beta&t=Rsq-qMKyaLtEzqObyiLdMtdrsxlEA7MHlYzvdIK5U8A",
+    roles: [
+      {
+        title: "Fellow",
+        date: "March 2021 - April 2021",
+        responsibilities: [
+          "Won People's Choice in one of 16 cohorts",
+          "Coordinated in a cohort ages 13-21 to conduct research and develop a Twitter bot to educate social media users about the spread of misinformation on social networking platforms",
+          "Attended weekly workshops led by industry and academic professionals to learn about algorithmic bias and human interaction with AI",
+        ],
+      },
+    ],
+    location: "Remote",
+  },
 ];
