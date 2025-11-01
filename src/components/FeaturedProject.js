@@ -10,7 +10,6 @@ function FeaturedProject({
   tech,
   githubLink,
   externalLink,
-  showLearnMore,
   reverse,
   image,
 }) {
@@ -46,24 +45,18 @@ function FeaturedProject({
             ))}
           </ul>
         ))}
-        {showLearnMore ? (
-          <a href="#" className="btn-outline">
-            Learn More
-          </a>
-        ) : (
-          <div className="project-links">
-            {githubLink && (
-              <a href={githubLink} aria-label="GitHub">
-                <GitHubIcon width={24} height={24} />
-              </a>
-            )}
-            {externalLink && (
-              <a href={externalLink} aria-label="External Link">
-                <ExternalLinkIcon width={24} height={24} />
-              </a>
-            )}
-          </div>
-        )}
+        <div className="project-links">
+          {githubLink && (
+            <a href={githubLink} aria-label="GitHub">
+              <GitHubIcon width={24} height={24} />
+            </a>
+          )}
+          {externalLink && (
+            <a href={externalLink} aria-label="External Link">
+              <ExternalLinkIcon width={24} height={24} />
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
