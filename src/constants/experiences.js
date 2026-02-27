@@ -79,6 +79,22 @@ export const allExperiences = [
     roles: [
       {
         title: "Mentor",
+        date: "January 2026 - February 2026",
+        responsibilities: [
+          <>
+            Mentored three college students contributing to <a
+              href="https://github.com/OpenEnergyDashboard/OED/pull/1579"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="highlight"
+            >
+              Open Energy Dashboard
+            </a> on Git and CommonJS usage. Supported for three weeks.
+          </>
+        ],
+      },
+      {
+        title: "Mentor",
         date: "July 2023 - August 2023",
         responsibilities: [
           <>
@@ -93,7 +109,7 @@ export const allExperiences = [
               Firefiles
             </a>{" "}
             open-source application. Supported for seven weeks.
-          </>,
+          </>
         ],
       },
     ],
