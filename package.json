@@ -18,7 +18,7 @@
     "test:legacy": "react-scripts test",
     "eject:legacy": "react-scripts eject",
     "start": "npx serve .",
-    "build": "mkdir -p build && cp index.html build/ && cp -r public/* build/"
+    "build": "mkdir -p build && cp -r public/* build/ && cp index.html build/"
   },
   "eslintConfig": {
     "extends": [
