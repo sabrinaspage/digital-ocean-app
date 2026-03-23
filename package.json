@@ -13,10 +13,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start:legacy": "react-scripts start",
+    "build:legacy": "react-scripts build",
+    "test:legacy": "react-scripts test",
+    "eject:legacy": "react-scripts eject",
+    "start": "npx serve .",
+    "build": "mkdir -p build && cp index.html build/ && cp -r public/* build/"
   },
   "eslintConfig": {
     "extends": [
