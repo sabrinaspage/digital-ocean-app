@@ -27,7 +27,6 @@ function About() {
         </div>
         <div className="about-image">
           <div className="image-wrapper">
-            <img src="/selfie.png" alt="Sabrina Reyes" className="profile-image" />
             <div className="image-border"></div>
             <div className="image-overlay"></div>
           </div>
